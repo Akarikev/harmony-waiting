@@ -25,7 +25,7 @@ function FormInput() {
 
   return (
     <div className=" mt-6 " suppressHydrationWarning>
-      <h1 className="md:uppercase md:text-center text-center text-[#0f172a] headers_font lg:text-7xl md:text-5xl text-2xl font-medium mb-4 ">
+      <h1 className="md:uppercase md:text-center text-center text-[#0f172a]  lg:text-7xl md:text-5xl text-2xl font-medium mb-4 ">
         Be the First to Know when its{" "}
         <span className="text-green-400">live! 🎉</span>
       </h1>
