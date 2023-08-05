@@ -8,7 +8,7 @@ export default function Home() {
       className="flex min-h-screen flex-col items-center p-24 md:p-24"
       suppressHydrationWarning
     >
-      <h1 className="headers_font text-blue-500 text-center text-5xl font-bold mb-4">
+      <h1 className=" text-blue-500 text-center text-5xl font-bold mb-4">
         harmony haven
       </h1>
       <div className="z-10 w-full max-w-5xl items-center justify-between  text-sm lg:flex">
