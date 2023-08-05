@@ -4,13 +4,20 @@ import React, { useState } from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "configs/firebase";
 
 function FormInput() {
   const [inputName, setInputName] = useState("");
   const [inputEmail, setEmail] = useState("");
-  const submitForm = () => {
-    console.log(inputName);
-    console.log(inputEmail);
+
+  const submitForm = async () => {
+    const docRef = await addDoc(collection(db, "users"), {
+      name: inputName,
+      email: inputEmail,
+    });
+
+    console.log("Document written with ID: ", docRef.id);
   };
 
   return (
@@ -23,14 +30,15 @@ function FormInput() {
         we&apos;d love to hear what you think some features should be added!🥱.
         click the link below to answer a 2 min short questionnaire
       </p>
-
-      <Link
-        href="https://forms.gle/44wjmhzhzCfJHner6"
-        target="_blank"
-        className="font-bold text-center"
-      >
-        <p className="underline decoration-wavy mb-3">to questionnaire</p>
-      </Link>
+      <div>
+        <Link
+          href="https://forms.gle/44wJmhzhzCfJHner6"
+          target="_blank"
+          className="flex justify-center items-center mb-3 font-semibold underline "
+        >
+          to questionnaire
+        </Link>
+      </div>
 
       <div className="flex justify-center items-center w-full">
         <form

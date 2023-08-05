@@ -11,12 +11,14 @@ function FormCard() {
     >
       <Link
         href={"https://github.com/Akarikev/harmony-haven-app"}
-        className="rounded-full p-4 shadow-md flex justify-center items-center transition delay-75 ease-in-out hover:bg-slate-900 hover:text-white"
+        className="rounded-full p-4 shadow-md flex justify-center items-center transition delay-75 ease-in-out hover:bg-slate-900 mt-4 hover:text-white"
       >
         <GithubIcon width={20} />
       </Link>
       {""}
-      <small>check our github repo 🌟 </small>
+      <small className="text-gray-500 mt-3 underline font-semibold">
+        check our github repo 🌟{" "}
+      </small>
     </div>
   );
 }
