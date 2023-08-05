@@ -71,7 +71,9 @@ function FormInput() {
 
             <small className="text-center italic text-gray-500">
               By entering this form you submit your email to us so we can send
-              you your personal link when it goes live
+              you your personal link when it goes live. Harmony Haven is a
+              wellness, mental health web application for anxiety and
+              deppression made for Ghanaians. **This is a final year project **
             </small>
           </div>
         </form>
