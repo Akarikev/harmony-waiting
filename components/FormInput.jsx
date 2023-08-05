@@ -17,6 +17,9 @@ function FormInput() {
       email: inputEmail,
     });
 
+    setInputName("");
+    setEmail("");
+
     console.log("Document written with ID: ", docRef.id);
   };
 
@@ -24,7 +27,7 @@ function FormInput() {
     <div className=" mt-6 " suppressHydrationWarning>
       <h1 className="md:uppercase md:text-center text-center text-[#0f172a] headers_font lg:text-7xl md:text-5xl text-2xl font-medium mb-4 ">
         Be the First to Know when its{" "}
-        <span className="text-green-400">live!</span>
+        <span className="text-green-400">live! 🎉</span>
       </h1>
       <p className="text-center mb-2 text-gray-600 ">
         we&apos;d love to hear what you think some features should be added!🥱.
